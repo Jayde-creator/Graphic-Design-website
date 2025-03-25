@@ -1,0 +1,139 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0d47a1;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    padding: 40px 20px;
+    color: #0d47a1;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Service Box Layout */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+/* Service Box */
+.service-box {
+    width: 45%;
+    background: #ffffff;
+    padding: 30px;
+    border: 4px solid #0d47a1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.service-box:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h3, h4 {
+    font-size: 24px;
+    color: #0d47a1;
+    margin-bottom: 12px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #0d47a1;
+    color: white;
+    font-size: 17px;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #bbdefb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+        text-align: center;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 30px;
+    }
+    
+    header, footer {
+        font-size: 20px;
+    }
+}
+
+/* Centered Image Styling */
+.center-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

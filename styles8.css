@@ -1,0 +1,131 @@
+/* Light Blue Elegant & Cute Theme - Enhanced */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Soft Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #EAF6FF, #D1ECFF);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Elegant & Professional Container */
+.container {
+    max-width: 750px;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid rgba(2, 136, 209, 0.2);
+}
+
+/* Luxurious Hover Effect */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(2, 136, 209, 0.25);
+}
+
+/* Elegant Title Styling */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #01579b;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(1, 87, 155, 0.2);
+}
+
+/* Spacing for Sections */
+section {
+    padding: 25px 0;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Elegant Inputs & Buttons */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #81d4fa;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+/* Soft Inner Glow for Input Focus */
+input:focus {
+    outline: none;
+    border-color: #01579b;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6), 0 0 10px rgba(1, 87, 155, 0.3);
+}
+
+/* Elegant & Stylish Button */
+button {
+    background: linear-gradient(135deg, #0288d1, #01579b);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+    font-size: 17px;
+    box-shadow: 0 4px 12px rgba(1, 87, 155, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.6); /* Soft gold outline */
+}
+
+/* Button Hover Effect - Elegant Glow */
+button:hover {
+    background: linear-gradient(135deg, #01579b, #014064);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(1, 87, 155, 0.4);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(1, 87, 155, 0.4);
+}
+
+/* Elegant Preformatted Text */
+pre {
+    background: #bbdefb;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    
+    button {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,118 @@
+/* Import Elegant Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Lora:wght@400;500&display=swap');
+
+/* Global Reset & Body Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E3ECF9; /* Soft Sky Blue Background */
+    color: #1C1F33; /* Deep Navy for Strong Readability */
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Elegant Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #F8FAFD; /* Soft White with a Cool Blue Tint */
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Elegant Header Styling */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #112D4E; /* Rich Royal Blue */
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #3A7CA5; /* Deep Cerulean Accent */
+    display: inline-block;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Elegant Paragraph Styling */
+p {
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    color: #2C3E50; /* Muted Dark Blue for Warmth */
+    max-width: 780px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Refined Grid Styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 22px;
+    padding: 30px;
+}
+
+/* Elegant Image Styling */
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    border: 4px solid #3A7CA5; /* Deep Cerulean Border */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0.92;
+}
+
+/* Elegant Hover Effect */
+.grid img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+/* Smooth Fade-in Effect */
+.grid img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .container {
+        padding: 22px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+    
+    p {
+        font-size: 17px;
+    }
+}

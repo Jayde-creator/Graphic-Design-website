@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 50px;
+    background-color: #e8eff6; /* Subtle light blue background */
+    color: #333; /* Dark gray text color for better readability */
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px; /* More rounded corners for elegance */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #d4af37; /* Rich gold border */
+    position: relative;
+}
+
+.faq-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #2a2a2a; /* Slightly softer dark gray for the header */
+    margin-bottom: 50px;
+    font-size: 42px; /* Larger font size for greater impact */
+    font-weight: 800; /* Heavier weight for the title */
+    letter-spacing: 1.5px; /* Slight letter spacing for elegance */
+}
+
+.faq-item {
+    margin-bottom: 40px; /* More space between FAQ items */
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #f8f9fa; /* Soft hover effect on each FAQ item */
+}
+
+.question {
+    font-weight: 600;
+    cursor: pointer;
+    background: #0056b3; /* Deep blue for a professional look */
+    color: #fff;
+    padding: 25px 30px; /* Spacious padding for a bigger button */
+    border-radius: 12px; /* Slightly more rounded corners */
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 22px; /* Slightly larger font size */
+    text-transform: uppercase; /* Adds modern touch */
+    letter-spacing: 1.5px; /* More distinct letter spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question:hover {
+    background: #004080; /* Darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.answer {
+    display: none;
+    padding: 20px 30px; /* More padding for better readability */
+    background: #f9f9f9; /* Soft light gray background */
+    border-left: 8px solid #d4af37; /* Thicker gold accent for a more premium feel */
+    margin-top: 20px;
+    border-radius: 12px; /* More rounded corners to match the style */
+    font-size: 20px; /* Larger font size for the answer */
+    color: #555; /* Softer text color for the answer */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+footer {
+    background-color: #2c3e50; /* Dark, elegant background color */
+    color: #ecf0f1; /* Light gray text for contrast */
+    padding: 40px 0;
+    text-align: center; /* Center content inside the footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between links */
+    margin-bottom: 20px; /* Space between nav and footer text */
+}
+
+.footer-nav a {
+    color: #ecf0f1; /* Light gray links */
+    text-decoration: none;
+    font-size: 18px; /* Font size for links */
+    font-weight: 500; /* Medium font weight */
+    text-transform: uppercase; /* Uppercase links for elegance */
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-nav a:hover {
+    color: #f39c12; /* Gold color on hover for a stylish effect */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+footer p {
+    font-size: 16px; /* Font size for footer text */
+    color: #ecf0f1; /* Light gray text */
+    margin-top: 20px; /* Space above the footer text */
+    font-weight: 400; /* Regular weight */
+}
+
+/* Optional: Add a subtle animation for the footer text */
+footer p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Optional: Add a subtle animation for when the answer is revealed */
+.answer.show {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="styles12.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 3px solid #007bff;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(0)">What is this website about?</div>
+            <div class="answer">This website provides information and services related to our offerings.</div>
+        </div>
+         <div class="faq-item">
+              <div class="question" onclick="toggleAnswer(1)">Do you take custom design requests?</div>
+              <div class="answer">Yes! I’m open to custom projects. Feel free to reach out with details about your idea.</div>
+        </div>
+       
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(2)">How can I contact support?</div>
+            <div class="answer">You can contact support through our contact page or email us at jdesignstudios07@gmail.com.</div>
+        </div>
+       
+       <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(3)">What payment methods do you accept?</div>
+            <div class="answer">We accept credit/debit cards, PayPal, and bank transfers.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(index) {
+            var answers = document.querySelectorAll('.answer');
+            answers[index].style.display = (answers[index].style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+   
+   <footer>
+    <div class="footer-nav">
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>                
+    </div>
+    <p>Jayde Donaldson 2026</p>
+</footer> 
+</body>
+</html>

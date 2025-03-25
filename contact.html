@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Contact</title>
+    <link rel="stylesheet" href="styles8.css"> 
+    <style>
+        /* Styling for navigation links at the bottom */
+        .footer-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .footer-nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Fill out the form below to inquire about services.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="service" placeholder="What service do you need?" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="confirmationMessage" style="display: none; color: green;">
+                Thank you! Your inquiry has been submitted.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let service = document.getElementById("service").value;
+
+            // Generate XML Data
+            let xmlData = `<?xml version="1.0" encoding="UTF-8"?>
+            <contact>
+                <name>${name}</name>
+                <email>${email}</email>
+                <phone>${phone}</phone>
+                <service>${service}</service>
+            </contact>`;
+
+            // Log XML data (for testing or sending to a server)
+            console.log(xmlData);
+
+            // Show confirmation message
+            document.getElementById("confirmationMessage").style.display = "block";
+
+            // Reset form fields
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href= "FAQ.html">FAQ's</a>
+                
+        </div>
+        <p style="text-align: center; margin-top: 10px;">Jayde Donaldson 2026</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
